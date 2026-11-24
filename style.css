@@ -1,0 +1,359 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000d4;
+    font-size: 0.9rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+main {
+    flex: 1;
+}
+section[id] {
+    scroll-margin-top: 50px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    width: 94%;
+    padding: 0 3%;
+    z-index: 100;
+}
+.navbar > ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+li > a {
+    color: white;
+    text-decoration: none;
+}
+.btn {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px 0px 5px 5px;
+}
+.main-section {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 600px;
+    display: flex;
+    align-items: stretch;
+    margin-top: 43px;
+}
+.jelajahi {
+    flex: 1;
+    margin: 16px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-shadow: 2px 2px 5px black;
+}
+/*.movies {
+    background-color: ;
+}*/
+.nav-movies > ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 16px;
+    padding: 16px;
+}
+.nav-movies li > a {
+    background-color: red;
+    padding: 5px 20px;
+    border-radius: 10px 10px 10px 0px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+
+.movie-card {
+    min-width: 160px;
+    flex-shrink: 0;
+    background: darkred;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+.category {
+    background-color: black;
+    padding: 20px 10px;
+    border-radius: 10px;
+    margin: 10px 5px;
+}
+.category > h2 {
+    padding-bottom: 15px;
+    margin-left: 10px;
+    color: white;
+}
+.movie-info {
+    padding: 0px 10px 10px 10px;
+}
+.movie-info h3 {
+    margin-bottom: 8px;
+    color: white;
+}
+.movie-info > p {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+a.btn {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 5px 0px 5px 0px;
+}
+a.logo,
+.back-btn {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    color: white;
+}
+.flix {
+    color: #e50914;
+}
+.brand {
+    color: white;
+}
+.btn-disabled {
+    background-color: #555;
+    color: #ccc;
+    cursor: not-allowed;
+    width: 100%;
+    display: block;
+}
+.empty-msg {
+    color: #aaa;
+    padding: 10px;
+}
+.eps-container .btn {
+    cursor: pointer;
+    background-color: #333;
+}
+.eps-container .btn.active {
+    background-color: red;
+}
+.video-container iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+.video-container {
+    width: 100%;
+    background: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video-container video {
+    display: block;
+    width: 100%;
+    max-height: 650px;
+}
+.video-info {
+    margin-top: 25px;
+}
+.video-info h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.movie-meta {
+    display: flex;
+    gap: 15px;
+    color: #aaa;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.video-info p {
+    color: #ccc;
+    line-height: 1.7;
+    max-width: 750px;
+}
+.container {
+    width: 86%;
+    margin: 48px auto;
+}
+.related-section {
+    margin-top: 55px;
+}
+.related-section h2 {
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+.related-list {
+    display: flex;
+    gap: 10px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.related-info {
+    padding: 12px;
+}
+.related-info h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+.related-info p {
+    color: #aaa;
+    font-size: 13px;
+}
+footer {
+    text-align: center;
+    padding: 25px;
+    background: black;
+    color: #888;
+}
+.eps-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.eps-container > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons {
+    margin-top: 10px;
+}
+.like-btn {
+    margin-right: 10px;
+}
+.favorite-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.favorite-btn.active {
+    background: crimson;
+}
+
+/* ABOUT SECTION */
+
+.about-container {
+    width: 86%;
+    padding: 30px 7%;
+    background: #181818;
+    margin-top: 40px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-content h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+.disclaimer {
+    padding: 0;
+    color: #aaa;
+    margin: 0;
+}
+/*search box*/
+#searchMessage {
+    display: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 12px;
+    padding: 10px;
+}
+/* TOMBOL CLEAR SEARCH */
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+    width: 300px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 30px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 15px;
+}
+
+#clearButton {
+    position: absolute;
+    right: 90px;
+    display: none;
+    border: none;
+    background: transparent;
+    color: #555;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+#searchButton {
+    flex-shrink: 0;
+    padding: 10px 15px;
+}
+h1,
+h2,
+h3 {
+    color: white;
+}

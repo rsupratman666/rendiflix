@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Nonton Omar - RENDIFlix</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <a href="index.html" class="logo">
+                <h1>RENDI<span class="flix">Flix</span></h1>
+            </a>
+
+            <a href="index.html" class="back-btn"> ← Kembali </a>
+        </header>
+
+        <!-- MAIN CONTENT -->
+        <main class="container">
+            <!-- VIDEO PLAYER -->
+            <section class="player-section">
+                <div class="video-container">
+                    <iframe
+                        src="https://player.abyssplayer.com/ufcpbUp83"
+                        title="Omar"
+                        allowfullscreen
+                        id="videoPlayer"
+                    ></iframe>
+                </div>
+
+                <!-- Tombol episode dibuat otomatis oleh script.js -->
+                <div class="eps-container" id="epsContainer">
+                    <h3>Episode:</h3>
+                </div>
+
+                <!-- VIDEO INFORMATION -->
+                <div class="video-info">
+                    <h1>Omar</h1>
+
+                    <div class="movie-meta">
+                        <span>2012</span>
+                        <span>HD</span>
+                        <span>Sejarah</span>
+                        <span>45 menit</span>
+                    </div>
+
+                    <p>
+                        Umar ketika masih muda. Sempat ada scene dirinya ketika
+                        di ujung masa kepemimpinan. Kebanyakan scene,
+                        menggambarkan kondisi jazirah arab ketika Muhammad belum
+                        diangkat menjadi Rasul
+                    </p>
+
+                    <div class="buttons">
+                        <button type="button" class="like-btn">👍 Like</button>
+
+                        <button type="button" class="share-btn">↗ Share</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RECOMMENDED VIDEOS -->
+            <section class="related-section">
+                <h2>Video Selanjutnya</h2>
+
+                <div class="related-list">
+                    <div class="movie-card">
+                        <img
+                            src="https://m.media-amazon.com/images/M/MV5BYWVkNWFlMGMtOWM4OS00ODEyLTg2MDYtZGM2ZDI4M2I1ZTMyXkEyXkFqcGc@._V1_.jpg"
+                            alt="Tokyo Revengers"
+                        />
+
+                        <div class="movie-info">
+                            <h3>Tokyo Revengers</h3>
+                            <p>2021 | ⭐ 6.5</p>
+                            <a class="btn" href="watch-jve.html">Watch Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Rendi Play. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js" defer></script>
+    </body>
+</html>

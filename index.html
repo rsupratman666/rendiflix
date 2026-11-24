@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RENDIFlix - Streaming Film</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>RENDI<span class="flix">Flix</span></h1>
+                </div>
+
+                <ul>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#movies">Movies</a></li>
+                    <li><a href="#favorite">Favorites</a></li>
+                    <!--<li><a href="#about">About</a></li>-->
+                </ul>
+
+                <button type="button" class="btn">Login</button>
+            </nav>
+        </header>
+
+        <main id="beranda">
+            <section class="main-section">
+                <div class="jelajahi">
+                    <h1>Explore Movies</h1>
+                    <p>
+                        Jelajahi berbagai pilihan film menarik dari berbagai
+                        genre dan kategori. Temukan film terbaru, tontonan
+                        populer, hingga koleksi film terbaik yang siap menemani
+                        waktu luangmu. Nikmati pengalaman menonton yang seru dan
+                        temukan cerita favoritmu hanya di sini!
+                    </p>
+
+                    <div class="search-box">
+                        <input
+                            id="searchInput"
+                            type="text"
+                            placeholder="Cari film..."
+                            autocomplete="off"
+                        />
+
+                        <button type="button" id="clearButton">×</button>
+
+                        <button type="button" id="searchButton" class="btn">
+                            Search
+                        </button>
+                    </div>
+
+                    <p id="searchMessage"></p>
+                </div>
+            </section>
+
+            <section id="movies" class="movies">
+                <nav class="nav-movies">
+                    <ul>
+                        <li><a href="#action">Actions</a></li>
+                        <li><a href="#drama">Drama</a></li>
+                        <li><a href="#comedy">Comedy</a></li>
+                    </ul>
+                </nav>
+            </section>
+
+            <!-- Kartu film dibuat otomatis oleh script.js dari data "movies" -->
+            <section id="popular" class="category" data-searchable>
+                <h2>Popular Movies</h2>
+                <div class="movie-container" data-genre="all"></div>
+            </section>
+
+            <section id="action" class="category" data-searchable>
+                <h2>Actions</h2>
+                <div class="movie-container" data-genre="action"></div>
+            </section>
+
+            <section id="drama" class="category" data-searchable>
+                <h2>Drama</h2>
+                <div class="movie-container" data-genre="drama"></div>
+            </section>
+
+            <section id="comedy" class="category" data-searchable>
+                <h2>Comedy</h2>
+                <div class="movie-container" data-genre="comedy"></div>
+            </section>
+
+            <section id="favorite" class="category">
+                <h2>My Favorites</h2>
+                <div class="movie-container" id="favorite-container"></div>
+            </section>
+        </main>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-container" id="about">
+            <div class="about-content">
+                <h2>About Us♥</h2>
+
+                <p>
+                    Selamat datang di website streaming film kami. Nikmati
+                    berbagai pilihan film dan serial favorit dengan tampilan
+                    yang sederhana dan nyaman.
+                </p>
+
+                <p>
+                    Kami menyediakan berbagai kategori film untuk menemani waktu
+                    luang Anda.
+                </p>
+
+                <h3 class="disclaimer">DISCLAIMER</h3>
+
+                <div class="disclaimer">
+                    <strong class="brand">RENDI</strong
+                    ><span class="flix">Flix</span> only provides movie link
+                    information available on the internet. We do not store video
+                    files on our own server. All content belongs to the original
+                    providers.
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>© 2026 Rendi Play. All Rights Reserved.</p>
+        </footer>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>
